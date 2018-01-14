@@ -60,4 +60,5 @@ RUN $INST_SCRIPTS/set_user_permission.sh $STARTUPDIR $HOME
 USER 1984
 
 ENTRYPOINT ["/dockerstartup/vnc_startup.sh"]
-CMD ["--tail-log"]
+#CMD ["--tail-log"]
+CMD /bin/bash
